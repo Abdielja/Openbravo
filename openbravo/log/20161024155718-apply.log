@@ -1,0 +1,1151 @@
+
+set.code.rev:
+
+code.rev:
+
+init:
+
+core.lib:
+
+init:
+
+compile:
+
+build.jar:
+      [jar] Building jar: G:\Development\Projects\Openbravo\src-core\lib\openbravo-core.jar
+
+build:
+
+copy.core.lib:
+     [copy] Copying 1 file to G:\Development\Projects\Openbravo\lib\runtime
+
+database.lib:
+
+compile:
+
+jar:
+      [jar] Building jar: G:\Development\Projects\Openbravo\src-db\build\lib\dbmanager.jar
+     [copy] Copying 1 file to G:\Development\Projects\Openbravo\src-db\database\lib
+
+buildvalidation:
+      [sql] Executing commands
+      [sql] 2 of 2 SQL statements executed successfully
+
+buildvalidation:
+     [java] 0    [main] INFO  org.openbravo.buildvalidation.BuildValidationHandler - Executing build validation: org.openbravo.buildvalidation.AccountingTabs
+     [java] 783  [main] INFO  org.openbravo.buildvalidation.BuildValidationHandler - Executing build validation: org.openbravo.buildvalidation.CheckUpdateConnectionPoolMerge
+     [java] 801  [main] INFO  org.openbravo.buildvalidation.BuildValidationHandler - Executing build validation: org.openbravo.buildvalidation.DatabaseDecimalNumberCheck
+     [java] 812  [main] INFO  org.openbravo.buildvalidation.BuildValidationHandler - Executing build validation: org.openbravo.buildvalidation.DatabaseVersionCheck
+     [java] 832  [main] INFO  org.openbravo.buildvalidation.BuildValidationHandler - Executing build validation: org.openbravo.buildvalidation.DuplicateDocExchangeRate
+     [java] 859  [main] INFO  org.openbravo.buildvalidation.BuildValidationHandler - Executing build validation: org.openbravo.buildvalidation.DuplicatedJavaPackage
+     [java] 871  [main] INFO  org.openbravo.buildvalidation.BuildValidationHandler - Executing build validation: org.openbravo.buildvalidation.DuplicatedOrgWarehouse
+     [java] 883  [main] INFO  org.openbravo.buildvalidation.BuildValidationHandler - Executing build validation: org.openbravo.buildvalidation.DuplicatedPriceListVersion
+     [java] 896  [main] INFO  org.openbravo.buildvalidation.BuildValidationHandler - Executing build validation: org.openbravo.buildvalidation.GLJournalAccountingCheck
+     [java] 907  [main] INFO  org.openbravo.buildvalidation.BuildValidationHandler - Executing build validation: org.openbravo.buildvalidation.PaymentGLItemCheck
+     [java] 924  [main] INFO  org.openbravo.buildvalidation.BuildValidationHandler - Executing build validation: org.openbravo.buildvalidation.PreferenceConflict
+     [java] 960  [main] INFO  org.openbravo.buildvalidation.BuildValidationHandler - Executing build validation: org.openbravo.buildvalidation.RemoveCostingRuleProcessExecutions
+     [java] 970  [main] INFO  org.openbravo.buildvalidation.BuildValidationHandler - Executing build validation: org.openbravo.buildvalidation.User1Ready
+     [java] 982  [main] INFO  org.openbravo.buildvalidation.BuildValidationHandler - Executing build validation: org.openbravo.advpaymentmngt.buildvalidation.TransactionsWithMissingData
+     [java] 1001 [main] INFO  org.openbravo.buildvalidation.BuildValidationHandler - Executing build validation: org.openbravo.advpaymentmngt.buildvalidation.UniquePaymentForTransaction
+     [java] 1021 [main] INFO  org.openbravo.buildvalidation.BuildValidationHandler - Executing build validation: org.openbravo.advpaymentmngt.buildvalidation.UnpostRefundPayments
+     [java] 1035 [main] INFO  org.openbravo.buildvalidation.BuildValidationHandler - Executing build validation: org.openbravo.advpaymentmngt.buildvalidation.WrongPaymentScheduleDetailsCheck
+     [java] 1087 [main] INFO  org.openbravo.buildvalidation.BuildValidationHandler - Executing build validation: org.openbravo.retail.posterminal.buildvalidation.DuplicatedPosTerminalPaymentType
+
+update.database:
+      [sql] Executing commands
+      [sql] 2 of 2 SQL statements executed successfully
+
+update.database.java:
+     [java] Executing database update process without checking changes in local files.
+     [java] 0    INFO  - Database connection: jdbc:postgresql://localhost:5432/obdev. User: tad
+     [java] 819  INFO  - Forced recreation: true
+     [java] 1865 INFO  - Executing full update.database
+     [java] 1882 INFO  - Reading tables...
+     [java] 24576 INFO  - Reading views...
+     [java] 24843 INFO  - Reading sequences...
+     [java] 24854 INFO  - Reading triggers...
+     [java] 24929 INFO  - Reading functions...
+     [java] 26064 INFO  - Sorting foreign keys, indexes and checks...
+     [java] 26272 INFO  - Starting function and trigger standardization.
+     [java] 58725 INFO  - Checking datatypes from the model loaded from the database
+     [java] 58732 INFO  - Original model loaded from database.
+     [java] 58784 INFO  - Reading model files...
+     [java] 72419 INFO  - Checking datatypes from the model loaded from XML files
+     [java] 72534 INFO  - Loading data from XML files
+     [java] 78870 INFO  - Loading and applying configuration scripts
+     [java] 78881 INFO  - Applying structure part of configuration script: org.openbravo.v3
+     [java] 78886 INFO  - Loading configuration script: G:\Development\Projects\Openbravo\modules\org.openbravo.v3\src-db\database\configScript.xml
+     [java] 78948 INFO  - Applying structure part of configuration script: org.openbravo.retail.pack
+     [java] 78953 INFO  - Loading configuration script: G:\Development\Projects\Openbravo\modules\org.openbravo.retail.pack\src-db\database\configScript.xml
+     [java] Checking if database structure was modified locally.
+     [java] Checking if data has changed in the application dictionary.
+     [java] 80881 INFO  - Executing default prescript
+     [java] 81131 INFO  - Executed 117 SQL command(s) successfully
+     [java] 81146 INFO  - Updating database model...
+     [java] 91998 INFO  - Executed 717 SQL command(s) successfully
+     [java] 92017 INFO  - Executed 6 forced SQL command(s) with 1 error(s)
+     [java] 92024 INFO  - Executed 1 forced SQL command(s) successfully
+     [java] 92029 INFO  - Model update complete.
+     [java] 92320 INFO  - Disabling foreign keys
+     [java] 92946 INFO  - Executed 382 SQL command(s) successfully
+     [java] 92956 INFO  - Disabling triggers
+     [java] 93082 INFO  - Executed 321 SQL command(s) successfully
+     [java] 93387 INFO  - Executed 837 SQL command(s) successfully
+     [java] 93393 INFO  - Running modulescripts...
+     [java] 93476 INFO  - Executing moduleScript: org.openbravo.modulescript.HBFix
+     [java] 93511 INFO  - Executing moduleScript: org.openbravo.modulescript.InitializeCostingMigrationPreference
+     [java] 93662 INFO  - Executing moduleScript: org.openbravo.advpaymentmngt.modulescript.InitializeAPRMReadyPreference
+     [java] 93700 INFO  - Executing moduleScript: org.openbravo.mobile.core.modulescript.UpdateEmptyMobileServerKey
+     [java] 93717 INFO  - Executing moduleScript: org.openbravo.retail.posterminal.modulescript.EnableTerminalAuthForNewInstances
+     [java] 93754 INFO  - Executing moduleScript: org.openbravo.retail.posterminal.modulescript.FixDataIssue24147
+     [java] 93801 INFO  - Executing moduleScript: org.openbravo.retail.posterminal.modulescript.FixDataIssue24409
+     [java] 93820 INFO  - Executing moduleScript: org.openbravo.retail.posterminal.modulescript.FixDataIssue25555
+     [java] 93852 INFO  - Executing moduleScript: org.openbravo.retail.posterminal.modulescript.FixDataIssue25963
+     [java] 93868 INFO  - Executing moduleScript: org.openbravo.retail.posterminal.modulescript.FixDataIssue26444
+     [java] 93895 INFO  - Executing moduleScript: org.openbravo.retail.posterminal.modulescript.FixDataIssue27695
+     [java] 93923 INFO  - Executing moduleScript: org.openbravo.retail.posterminal.modulescript.FixDataIssue28722
+     [java] 93943 INFO  - Executing moduleScript: org.openbravo.retail.posterminal.modulescript.FixDataIssue31842
+     [java] 93961 INFO  - Executing moduleScript: org.openbravo.retail.posterminal.modulescript.FixErrorTableData
+     [java] 93975 INFO  - Executing moduleScript: org.openbravo.retail.posterminal.modulescript.FixWrongPaymentScheduled
+     [java] 93995 INFO  - Executing moduleScript: org.openbravo.retail.posterminal.modulescript.InitializeProposalTypeforServices
+     [java] 94020 INFO  - Executing moduleScript: org.openbravo.retail.posterminal.modulescript.InsertDiscountPreference
+     [java] 94035 INFO  - Executing moduleScript: org.openbravo.retail.posterminal.modulescript.InsertNewFlowDiscountPreference
+     [java] 94055 INFO  - Executing moduleScript: org.openbravo.retail.posterminal.modulescript.ModuleScriptPosterminal
+     [java] 94074 INFO  - Loading and applying configuration scripts
+     [java] 94084 INFO  - Applying data part of configuration script: org.openbravo.v3
+     [java] 94089 INFO  - Loading configuration script: G:\Development\Projects\Openbravo\modules\org.openbravo.v3\src-db\database\configScript.xml
+     [java] 95544 INFO  - Applying data part of configuration script: org.openbravo.retail.pack
+     [java] 95550 INFO  - Loading configuration script: G:\Development\Projects\Openbravo\modules\org.openbravo.retail.pack\src-db\database\configScript.xml
+     [java] 95667 INFO  - Comparing databases to find differences
+     [java] 100425 INFO  - Updating Application Dictionary data...
+     [java] 105991 INFO  - Removing invalid rows.
+     [java] 106275 INFO  - Executed 89 SQL command(s) successfully
+     [java] 106280 INFO  - Recreating Primary Keys
+     [java] 106426 INFO  - Executing oncreatedefault statements for mandatory columns
+     [java] 106740 INFO  - Executed 76 SQL command(s) successfully
+     [java] 106745 INFO  - Recreating not null constraints
+     [java] 107363 INFO  - Executed 915 SQL command(s) successfully
+     [java] 107368 INFO  - Executing update final script (dropping temporary tables)
+     [java] 110121 INFO  - Executed 313 SQL command(s) successfully
+     [java] 110175 INFO  - Executed 4 forced SQL command(s) successfully
+     [java] 110180 INFO  - Enabling Foreign Keys and Triggers
+     [java] 111549 INFO  - Executed 382 SQL command(s) successfully
+     [java] 111704 INFO  - Executed 321 SQL command(s) successfully
+     [java] 111714 INFO  - Executing default postscript
+     [java] 111787 INFO  - Executed 13 SQL command(s) successfully
+
+database.postupdate.POSTGRE:
+      [sql] Executing commands
+      [sql] 5 of 5 SQL statements executed successfully
+
+update.dbupdate.timestamp:
+      [sql] Executing commands
+      [sql] 1 of 1 SQL statements executed successfully
+
+generate.entities.quick:
+
+init:
+
+compile.src.gen:
+    [javac] Compiling 4 source files to G:\Development\Projects\Openbravo\build\classes
+     [copy] Copying 119 files to G:\Development\Projects\Openbravo\build\classes
+     [copy] Copied 164 empty directories to 25 empty directories under G:\Development\Projects\Openbravo\build\classes
+
+generate.entities.quick:
+     [java] 0    [main] INFO  org.openbravo.base.model.ModelProvider  - Building runtime model
+     [java] 14899 [main] INFO  org.openbravo.base.gen.GenerateEntitiesTask  - Generated 630 entities
+    [javac] Compiling 537 source files to G:\Development\Projects\Openbravo\build\classes
+    [javac] Compiling 6 source files to G:\Development\Projects\Openbravo\build\classes
+
+set.code.rev:
+
+code.rev:
+
+init:
+
+compile.apply.module:
+      [sql] Executing commands
+      [sql] 2 of 2 SQL statements executed successfully
+
+init:
+
+compile.apply.module:
+    [mkdir] Created dir: G:\Development\Projects\Openbravo\build.apply\classes
+     [java] 0    [main] INFO  org.openbravo.data.Sqlc - strFileProperties: G:\Development\Projects\Openbravo\config/Openbravo.properties
+     [java] 1094 [main] INFO  org.openbravo.data.Sqlc - javaDateFormat: dd-MM-yyyy
+     [java] 1117 [main] INFO  org.openbravo.data.Sqlc - directory source: .
+     [java] 1129 [main] INFO  org.openbravo.data.Sqlc - directory destiny: G:\Development\Projects\Openbravo\build\javasqlc/src
+     [java] 1140 [main] INFO  org.openbravo.data.Sqlc - file termination: .xsql
+     [java] 1148 [main] INFO  org.openbravo.data.Sqlc - file connection: G:\Development\Projects\Openbravo\config/Openbravo.properties
+     [java] 1153 [main] INFO  org.openbravo.data.Sqlc - Write TXT Files: false
+     [java] 1164 [main] INFO  org.openbravo.data.Sqlc - QueryExecutionStrategy: optimized
+     [java] 1246 [main] INFO  org.openbravo.data.Sqlc - Loading driver: org.postgresql.Driver
+     [java] 1251 [main] INFO  org.openbravo.data.Sqlc - Driver loaded
+     [java] 1315 [main] INFO  org.openbravo.data.Sqlc - connect made
+    [javac] Compiling 1 source file to G:\Development\Projects\Openbravo\build.apply\classes
+
+apply.module:
+     [java] 0    [main] INFO  org.openbravo.dal.core.DalLayerInitializer  - Initializing in-memory model...
+     [java] 80   [main] INFO  org.openbravo.base.model.ModelProvider  - Building runtime model
+     [java] 15499 [main] INFO  org.openbravo.dal.core.DalLayerInitializer  - Model read in-memory, generating mapping...
+     [java] 33135 [main] INFO  org.openbravo.base.provider.OBConfigFileProvider  - Found provider config file G:\Development\Projects\Openbravo\config\provider-config.xml
+     [java] 33207 [main] INFO  org.openbravo.dal.core.DalLayerInitializer  - Dal layer initialized
+     [java] 33762 [main] INFO  org.openbravo.erpCommon.modules.ApplyModule - Looking for translation modules
+     [java] 33774 [main] INFO  org.openbravo.erpCommon.modules.ApplyModule - Looking for reference data modules
+     [java] 33946 [main] INFO  org.openbravo.erpCommon.modules.ApplyModule - 1 reference data modules have data files
+     [java] 33952 [main] INFO  org.openbravo.erpCommon.modules.ApplyModule - Importing data from Mobile Core Infrastructure module. Dataset: Log_Clean_Up_Mobile_config.xml
+   [delete] Deleting directory G:\Development\Projects\Openbravo\build.apply\classes
+
+set.code.rev:
+
+code.rev:
+
+init:
+
+core.lib:
+
+init:
+
+compile:
+
+build.jar:
+
+build:
+
+copy.core.lib:
+
+set.code.rev:
+
+code.rev:
+
+init:
+
+wad.lib:
+
+init:
+
+sqlc:
+     [java] 0    [main] INFO  org.openbravo.data.Sqlc - strFileProperties: G:\Development\Projects\Openbravo\config/Openbravo.properties
+     [java] 2    [main] INFO  org.openbravo.data.Sqlc - javaDateFormat: dd-MM-yyyy
+     [java] 3    [main] INFO  org.openbravo.data.Sqlc - directory source: ./src/org
+     [java] 3    [main] INFO  org.openbravo.data.Sqlc - directory destiny: G:\Development\Projects\Openbravo\src-wad/build/javasqlc
+     [java] 3    [main] INFO  org.openbravo.data.Sqlc - file termination: .xsql
+     [java] 3    [main] INFO  org.openbravo.data.Sqlc - file connection: G:\Development\Projects\Openbravo\config/Openbravo.properties
+     [java] 3    [main] INFO  org.openbravo.data.Sqlc - Write TXT Files: false
+     [java] 5    [main] INFO  org.openbravo.data.Sqlc - QueryExecutionStrategy: optimized
+     [java] 5    [main] INFO  org.openbravo.data.Sqlc - Loading driver: org.postgresql.Driver
+     [java] 197  [main] INFO  org.openbravo.data.Sqlc - Driver loaded
+     [java] 347  [main] INFO  org.openbravo.data.Sqlc - connect made
+     [java] 0    [main] INFO  org.openbravo.data.Sqlc - strFileProperties: G:\Development\Projects\Openbravo\config/Openbravo.properties
+     [java] 2    [main] INFO  org.openbravo.data.Sqlc - javaDateFormat: dd-MM-yyyy
+     [java] 3    [main] INFO  org.openbravo.data.Sqlc - directory source: G:\Development\Projects\Openbravo\modules
+     [java] 3    [main] INFO  org.openbravo.data.Sqlc - directory destiny: G:\Development\Projects\Openbravo\src-wad/build/javasqlc/src
+     [java] 3    [main] INFO  org.openbravo.data.Sqlc - file termination: .xsql
+     [java] 3    [main] INFO  org.openbravo.data.Sqlc - file connection: G:\Development\Projects\Openbravo\config/Openbravo.properties
+     [java] 4    [main] INFO  org.openbravo.data.Sqlc - Write TXT Files: false
+     [java] 6    [main] INFO  org.openbravo.data.Sqlc - QueryExecutionStrategy: optimized
+     [java] 6    [main] INFO  org.openbravo.data.Sqlc - Loading driver: org.postgresql.Driver
+     [java] 195  [main] INFO  org.openbravo.data.Sqlc - Driver loaded
+     [java] 340  [main] INFO  org.openbravo.data.Sqlc - connect made
+
+compileSqlc:
+
+compile:
+    [javac] Compiling 2 source files to G:\Development\Projects\Openbravo\src-wad\build\classes
+     [copy] Copying 2 files to G:\Development\Projects\Openbravo\src-wad\build\classes
+
+build.jar:
+      [jar] Building jar: G:\Development\Projects\Openbravo\src-wad\lib\openbravo-wad.jar
+
+build:
+
+set.code.rev:
+
+code.rev:
+
+init:
+
+trl.lib:
+
+init:
+
+sqlc:
+     [java] 0    [main] INFO  org.openbravo.data.Sqlc - strFileProperties: G:\Development\Projects\Openbravo\config/Openbravo.properties
+     [java] 4    [main] INFO  org.openbravo.data.Sqlc - javaDateFormat: dd-MM-yyyy
+     [java] 5    [main] INFO  org.openbravo.data.Sqlc - directory source: ./src
+     [java] 5    [main] INFO  org.openbravo.data.Sqlc - directory destiny: G:\Development\Projects\Openbravo\src-trl/build/javasqlc
+     [java] 5    [main] INFO  org.openbravo.data.Sqlc - file termination: .xsql
+     [java] 5    [main] INFO  org.openbravo.data.Sqlc - file connection: G:\Development\Projects\Openbravo\config/Openbravo.properties
+     [java] 5    [main] INFO  org.openbravo.data.Sqlc - Write TXT Files: false
+     [java] 8    [main] INFO  org.openbravo.data.Sqlc - QueryExecutionStrategy: optimized
+     [java] 8    [main] INFO  org.openbravo.data.Sqlc - Loading driver: org.postgresql.Driver
+     [java] 307  [main] INFO  org.openbravo.data.Sqlc - Driver loaded
+     [java] 547  [main] INFO  org.openbravo.data.Sqlc - connect made
+
+compileSqlc:
+
+compile:
+
+build.jar:
+      [jar] Building jar: G:\Development\Projects\Openbravo\src-trl\lib\openbravo-trl.jar
+
+build:
+
+set.code.rev:
+
+code.rev:
+
+init:
+
+compile.complete.development:
+      [sql] Executing commands
+      [sql] 2 of 2 SQL statements executed successfully
+
+trl.clean:
+
+clean:
+
+clean.src.gen:
+
+init:
+    [mkdir] Created dir: G:\Development\Projects\Openbravo\build\javasqlc
+    [mkdir] Created dir: G:\Development\Projects\Openbravo\build\javasqlc\src
+    [mkdir] Created dir: G:\Development\Projects\Openbravo\build\javasqlc\srcAD
+    [mkdir] Created dir: G:\Development\Projects\Openbravo\srcAD
+    [mkdir] Created dir: G:\Development\Projects\Openbravo\srcAD\org\openbravo\erpWindows
+    [mkdir] Created dir: G:\Development\Projects\Openbravo\srcAD\org\openbravo\erpCommon\ad_actionButton
+    [mkdir] Created dir: G:\Development\Projects\Openbravo\srcAD\org\openbravo\erpCommon\ad_callouts
+    [mkdir] Created dir: G:\Development\Projects\Openbravo\srcAD\org\openbravo\erpCommon\reference
+    [mkdir] Created dir: G:\Development\Projects\Openbravo\docs\api
+
+compile.src.gen:
+    [javac] Compiling 79 source files to G:\Development\Projects\Openbravo\build\classes
+     [copy] Copying 12 files to G:\Development\Projects\Openbravo\build\classes
+     [copy] Copying 1 file to G:\Development\Projects\Openbravo\build\classes
+    [javac] Compiling 4 source files to G:\Development\Projects\Openbravo\build\classes
+     [copy] Copying 119 files to G:\Development\Projects\Openbravo\build\classes
+     [copy] Copied 164 empty directories to 58 empty directories under G:\Development\Projects\Openbravo\build\classes
+
+generate.entities.quick:
+     [java] 0    [main] INFO  org.openbravo.base.model.ModelProvider  - Building runtime model
+     [java] 18576 [main] INFO  org.openbravo.base.gen.GenerateEntitiesTask  - Generated 630 entities
+    [javac] Compiling 589 source files to G:\Development\Projects\Openbravo\build\classes
+    [javac] Compiling 6 source files to G:\Development\Projects\Openbravo\build\classes
+
+generate.entities:
+
+wadvalidation:
+
+wad:
+     [java] 0    [main] INFO  org.openbravo.wad.WadConnection - Loading driver: org.postgresql.Driver
+     [java] 463  [main] INFO  org.openbravo.wad.WadConnection - Getting Connection: jdbc:postgresql://localhost:5432/obdev,tad
+     [java] 629  [main] INFO  org.openbravo.wad.Wad - strFileProperties: G:\Development\Projects\Openbravo\config/Openbravo.properties
+     [java] 635  [main] INFO  org.openbravo.wad.Wad - jsDateFormat: %d-%m-%Y
+     [java] 640  [main] INFO  org.openbravo.wad.Wad - sqlDateFormat: DD-MM-YYYY
+     [java] 645  [main] INFO  org.openbravo.wad.Wad - File connection: G:\Development\Projects\Openbravo\config
+     [java] 650  [main] INFO  org.openbravo.wad.Wad - window: %
+     [java] 654  [main] INFO  org.openbravo.wad.Wad - module: %
+     [java] 658  [main] INFO  org.openbravo.wad.Wad - directory destiny: G:\Development\Projects\Openbravo\srcAD/org/openbravo/erpWindows
+     [java] 663  [main] INFO  org.openbravo.wad.Wad - directory reference: G:\Development\Projects\Openbravo\srcAD/org/openbravo/erpCommon\reference
+     [java] 667  [main] INFO  org.openbravo.wad.Wad - directory web.xml: G:\Development\Projects\Openbravo\build\javasqlc/src
+     [java] 671  [main] INFO  org.openbravo.wad.Wad - directory ActionButtons: G:\Development\Projects\Openbravo\srcAD/org/openbravo/erpCommon/ad_actionButton
+     [java] 675  [main] INFO  org.openbravo.wad.Wad - generate web.xml: true
+     [java] 680  [main] INFO  org.openbravo.wad.Wad - generate tabs: true
+     [java] 685  [main] INFO  org.openbravo.wad.Wad - File separator: \
+     [java] 689  [main] INFO  org.openbravo.wad.Wad - Attach path: /opt/openbravo/attachments
+     [java] 693  [main] INFO  org.openbravo.wad.Wad - Web path: @actual_url_context@/web
+     [java] 696  [main] INFO  org.openbravo.wad.Wad - Quick mode: false
+     [java] 701  [main] INFO  org.openbravo.wad.Wad - Generate all 2.50 windows: false
+     [java] 3684 [main] INFO  org.openbravo.wad.Wad - 537 tabs to compile.
+     [java] 3725 [main] INFO  org.openbravo.wad.Wad - Updating table identifiers
+     [java] 12123 [main] INFO  org.openbravo.wad.Wad - Re-generating audit trail infrastructure
+     [java] 12144 [main] INFO  org.openbravo.wad.Wad - Processig combo reloads for action buttons 
+     [java] 12490 [main] INFO  org.openbravo.wad.Wad - Processing ActionButton_data.xml
+     [java] 12521 [main] INFO  org.openbravo.wad.Wad - Processing ActionButtonXml
+     [java] 13192 [main] INFO  org.openbravo.wad.Wad - Processing ActionButtonHtml
+     [java] 14053 [main] INFO  org.openbravo.wad.Wad - Processing ActionButton_Responser.xml
+     [java] 14118 [main] INFO  org.openbravo.wad.Wad - Processing ActionButton_ResponserJava.xml
+     [java] 14256 [main] INFO  org.openbravo.wad.Wad - Processing ActionButtonXml Generics
+     [java] 14349 [main] INFO  org.openbravo.wad.Wad - Processing ActionButtonHtml for generics
+     [java] 14562 [main] INFO  org.openbravo.wad.Wad - Processing ActionButtonDefault_data.xsql
+     [java] 18725 [main] INFO  org.openbravo.wad.Wad - After filtering generating 68 tabs and skipping 469
+     [java] 18730 [main] INFO  org.openbravo.wad.Wad - Processing web.xml
+     [java] 19713 [main] INFO  org.openbravo.wad.Wad - Processing Window: Amortization - Tab: Header - id: 800076
+     [java] 20171 [main] INFO  org.openbravo.wad.Wad - Processing Window: Asset Group - Tab: Asset Category - id: 452
+     [java] 20519 [main] INFO  org.openbravo.wad.Wad - Processing Window: Asset Group - Tab: Accounting - id: 800204
+     [java] 20868 [main] INFO  org.openbravo.wad.Wad - Processing Window: Assets - Tab: Assets - id: 800078
+     [java] 21377 [main] INFO  org.openbravo.wad.Wad - Processing Window: Assortment - Tab: Assortment - id: 09EF738DE00C4500819EC13BB48DEAE2
+     [java] 21685 [main] INFO  org.openbravo.wad.Wad - Processing Window: Budget - Tab: Header - id: 800205
+     [java] 21988 [main] INFO  org.openbravo.wad.Wad - Processing Window: Business Partner Category - Tab: Business Partner Category - id: 322
+     [java] 22204 [main] INFO  org.openbravo.wad.Wad - Processing Window: Business Partner Category - Tab: Accounting - id: 323
+     [java] 22561 [main] INFO  org.openbravo.wad.Wad - Processing Window: Commission - Tab: Header - id: 355
+     [java] 22922 [main] INFO  org.openbravo.wad.Wad - Processing Window: Commission Payment - Tab: Header - id: 362
+     [java] 23246 [main] INFO  org.openbravo.wad.Wad - Processing Window: Cost Adjustment - Tab: Header - id: 45A6D51BFBB74C079AC559A4240A296D
+     [java] 23563 [main] INFO  org.openbravo.wad.Wad - Processing Window: Doubtful Debt - Tab: Doubtful Debt - id: 9D859A2A50F44562AFA21AAF2DF91B8A
+     [java] 23910 [main] INFO  org.openbravo.wad.Wad - Processing Window: Doubtful Debt Run - Tab: Doubtful Debt Run - id: FA66A130BE8B48E88BF4F5A6E2FA0CDD
+     [java] 24157 [main] INFO  org.openbravo.wad.Wad - Processing Window: Doubtful Debt Run - Tab: Doubtful Debt - id: E4DC11F751F34F0DAE11A4D856CD99EB
+     [java] 24502 [main] INFO  org.openbravo.wad.Wad - Processing Window: End Year Close - Tab: End Year Close - id: 97E1F35BE08840AFB1DA4FE66D329542
+     [java] 24726 [main] INFO  org.openbravo.wad.Wad - Processing Window: Financial Account - Tab: Account - id: 2845D761A8394468BD3BA4710AA888D4
+     [java] 25228 [main] INFO  org.openbravo.wad.Wad - Processing Window: Financial Account - Tab: Transaction - id: 23691259D1BD4496BCC5F32645BCA4B9
+     [java] 25708 [main] INFO  org.openbravo.wad.Wad - Processing Window: Financial Account - Tab: Imported Bank Statements - id: C56E698100314ABBBBD3A89626CA551C
+     [java] 26142 [main] INFO  org.openbravo.wad.Wad - Processing Window: Financial Account - Tab: Reconciliations - id: FF8080813320657F0133209DE21B0042
+     [java] 26693 [main] INFO  org.openbravo.wad.Wad - Processing Window: Fiscal Calendar - Tab: Calendar - id: 128
+     [java] 27043 [main] INFO  org.openbravo.wad.Wad - Processing Window: Fiscal Calendar - Tab: Year - id: 129
+     [java] 27338 [main] INFO  org.openbravo.wad.Wad - Processing Window: G/L Journal - Tab: Batch - id: 159
+     [java] 27578 [main] INFO  org.openbravo.wad.Wad - Processing Window: G/L Journal - Tab: Header - id: 160
+     [java] 28280 [main] INFO  org.openbravo.wad.Wad - Processing Window: G/L Journal - Tab: Lines - id: 161
+     [java] 28648 [main] INFO  org.openbravo.wad.Wad - Processing Window: General Ledger Configuration - Tab: General Ledger Configuration - id: 199
+     [java] 28901 [main] INFO  org.openbravo.wad.Wad - Processing Window: General Ledger Configuration - Tab: Defaults - id: 252
+     [java] 29212 [main] INFO  org.openbravo.wad.Wad - Processing Window: Goods Movements - Tab: Header - id: 259
+     [java] 29525 [main] INFO  org.openbravo.wad.Wad - Processing Window: Goods Receipt - Tab: Header - id: 296
+     [java] 29882 [main] INFO  org.openbravo.wad.Wad - Processing Window: Goods Receipt - Tab: Lines - id: 297
+     [java] 30354 [main] INFO  org.openbravo.wad.Wad - Processing Window: Goods Shipment - Tab: Header - id: 257
+     [java] 30691 [main] INFO  org.openbravo.wad.Wad - Processing Window: Goods Shipment - Tab: Lines - id: 258
+     [java] 31128 [main] INFO  org.openbravo.wad.Wad - Processing Window: Landed Cost - Tab: Header - id: F25CBC61CDD64F5E8A6FDC41C6E23C96
+     [java] 31389 [main] INFO  org.openbravo.wad.Wad - Processing Window: Landed Cost - Tab: Cost - id: 1C05058D61AC4B69A7E550F32F9F2873
+     [java] 31725 [main] INFO  org.openbravo.wad.Wad - Processing Window: Language - Tab: Language - id: 112
+     [java] 31871 [main] INFO  org.openbravo.wad.Wad - Processing Window: Manage Requisitions - Tab: Header - id: 1004400001
+     [java] 32124 [main] INFO  org.openbravo.wad.Wad - Processing Window: Manage Requisitions - Tab: Lines - id: 1004400002
+     [java] 32515 [main] INFO  org.openbravo.wad.Wad - Processing Window: Matched Invoices - Tab: Matched Invoice - id: 408
+     [java] 32977 [main] INFO  org.openbravo.wad.Wad - Processing Window: Organization - Tab: Organization - id: 143
+     [java] 33299 [main] INFO  org.openbravo.wad.Wad - Processing Window: Payment In - Tab: Header - id: C4B6506838E14A349D6717D6856F1B56
+     [java] 33663 [main] INFO  org.openbravo.wad.Wad - Processing Window: Payment Out - Tab: Header - id: F7A52FDAAA0346EFA07D53C125B40404
+     [java] 34043 [main] INFO  org.openbravo.wad.Wad - Processing Window: Physical Inventory - Tab: Header - id: 255
+     [java] 34302 [main] INFO  org.openbravo.wad.Wad - Processing Window: Price List - Tab: Price List - id: 191
+     [java] 34476 [main] INFO  org.openbravo.wad.Wad - Processing Window: Price List - Tab: Price List Version - id: 238
+     [java] 34714 [main] INFO  org.openbravo.wad.Wad - Processing Window: Product - Tab: Product - id: 180
+     [java] 35338 [main] INFO  org.openbravo.wad.Wad - Processing Window: Product Category - Tab: Product Category - id: 189
+     [java] 35529 [main] INFO  org.openbravo.wad.Wad - Processing Window: Product Category - Tab: Accounting - id: 324
+     [java] 35799 [main] INFO  org.openbravo.wad.Wad - Processing Window: Purchase Invoice - Tab: Header - id: 290
+     [java] 36214 [main] INFO  org.openbravo.wad.Wad - Processing Window: Purchase Invoice - Tab: Lines - id: 291
+     [java] 36849 [main] INFO  org.openbravo.wad.Wad - Processing Window: Purchase Order - Tab: Header - id: 294
+     [java] 37291 [main] INFO  org.openbravo.wad.Wad - Processing Window: Purchase Order - Tab: Lines - id: 293
+     [java] 37904 [main] INFO  org.openbravo.wad.Wad - Processing Window: Requisition - Tab: Requisition - id: 800249
+     [java] 38139 [main] INFO  org.openbravo.wad.Wad - Processing Window: Return from Customer - Tab: Header - id: AF4090093CFF1431E040007F010048A5
+     [java] 38592 [main] INFO  org.openbravo.wad.Wad - Processing Window: Return Material Receipt - Tab: Header - id: 30576C6ABD12419F9D19D497216FC9B8
+     [java] 38925 [main] INFO  org.openbravo.wad.Wad - Processing Window: Return to Vendor - Tab: Header - id: 5A5CCFC8359B4D79BA705DC487FE8173
+     [java] 39331 [main] INFO  org.openbravo.wad.Wad - Processing Window: Return to Vendor Shipment - Tab: Header - id: 728DBD16A1F14A4D82335E37BA433E33
+     [java] 39645 [main] INFO  org.openbravo.wad.Wad - Processing Window: Sales Invoice - Tab: Header - id: 263
+     [java] 40103 [main] INFO  org.openbravo.wad.Wad - Processing Window: Sales Invoice - Tab: Lines - id: 270
+     [java] 40780 [main] INFO  org.openbravo.wad.Wad - Processing Window: Sales Order - Tab: Header - id: 186
+     [java] 41292 [main] INFO  org.openbravo.wad.Wad - Processing Window: Sales Order - Tab: Lines - id: 187
+     [java] 41886 [main] INFO  org.openbravo.wad.Wad - Processing Window: Sales Quotation - Tab: Header - id: F87F1EB7EB404F1F916EBAFAD1A0A334
+     [java] 42275 [main] INFO  org.openbravo.wad.Wad - Processing Window: Session - Tab: Session - id: 475
+     [java] 42458 [main] INFO  org.openbravo.wad.Wad - Processing Window: Simple G/L Journal - Tab: Header - id: 5A6F0ED7230C462BA4010653BA3F816A
+     [java] 42776 [main] INFO  org.openbravo.wad.Wad - Processing Window: Simple G/L Journal - Tab: Lines - id: 7797C73348324DCBB7F17666F31C87A5
+     [java] 43101 [main] INFO  org.openbravo.wad.Wad - Processing Window: Stock Reservation - Tab: Reservation - id: D53F675ADB2745059623175D8870A721
+     [java] 43447 [main] INFO  org.openbravo.wad.Wad - Processing Window: Tables and Columns - Tab: Table - id: 100
+     [java] 43707 [main] INFO  org.openbravo.wad.Wad - Processing Window: Tax Payment - Tab: Header - id: 1002100011
+     [java] 44097 [main] INFO  org.openbravo.wad.Wad - Processing Window: Windows, Tabs, and Fields - Tab: Window - id: 105
+     [java] 44351 [main] INFO  org.openbravo.wad.Wad - Processing Window: Windows, Tabs, and Fields - Tab: Tab - id: 106
+
+postwad:
+     [copy] Copying 112 files to G:\Development\Projects\Openbravo\WebContent\src-loc\design
+     [copy] Copying 112 files to G:\Development\Projects\Openbravo\WebContent\src-loc\design
+
+sqlc:
+     [java] 0    [main] INFO  org.openbravo.data.Sqlc - strFileProperties: G:\Development\Projects\Openbravo\config/Openbravo.properties
+     [java] 781  [main] INFO  org.openbravo.data.Sqlc - javaDateFormat: dd-MM-yyyy
+     [java] 789  [main] INFO  org.openbravo.data.Sqlc - directory source: .
+     [java] 795  [main] INFO  org.openbravo.data.Sqlc - directory destiny: G:\Development\Projects\Openbravo\build\javasqlc/src
+     [java] 802  [main] INFO  org.openbravo.data.Sqlc - file termination: .xsql
+     [java] 807  [main] INFO  org.openbravo.data.Sqlc - file connection: G:\Development\Projects\Openbravo\config/Openbravo.properties
+     [java] 812  [main] INFO  org.openbravo.data.Sqlc - Write TXT Files: false
+     [java] 818  [main] INFO  org.openbravo.data.Sqlc - QueryExecutionStrategy: optimized
+     [java] 823  [main] INFO  org.openbravo.data.Sqlc - Loading driver: org.postgresql.Driver
+     [java] 828  [main] INFO  org.openbravo.data.Sqlc - Driver loaded
+     [java] 870  [main] INFO  org.openbravo.data.Sqlc - connect made
+     [java] 888  [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\authentication\Authentication_data.xsql 	processed
+     [java] 938  [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\base\secureApp\Attribute_data.xsql 	processed
+     [java] 973  [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\base\secureApp\ClassInfo_data.xsql 	processed
+     [java] 1000 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\base\secureApp\DefaultOptions_data.xsql 	processed
+     [java] 1039 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\base\secureApp\DefaultSessionValues_data.xsql 	processed
+     [java] 1062 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\base\secureApp\OrgTree_data.xsql 	processed
+     [java] 1071 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\base\secureApp\Seguridad_data.xsql 	processed
+     [java] 1105 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\base\secureApp\SystemPreferences_data.xsql 	processed
+     [java] 1115 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\base\SystemStatusListener_data.xsql 	processed
+     [java] 1128 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\costing\CostingUtils_data.xsql 	processed
+     [java] 1143 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\costing\InitializeCostingMTransCostDateacct_data.xsql 	processed
+     [java] 1160 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_actionButton\ActionButtonDefault_data.xsql 	processed
+     [java] 1173 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_actionButton\CopyFromInvoice_data.xsql 	processed
+     [java] 1196 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_actionButton\CopyFromOrderRecord_data.xsql 	processed
+     [java] 1235 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_actionButton\CopyFromOrder_data.xsql 	processed
+     [java] 1255 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_actionButton\CopyFromPOOrder_data.xsql 	processed
+     [java] 1279 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_actionButton\CopyFromSettlement_data.xsql 	processed
+     [java] 1313 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_actionButton\CreateFile34_data.xsql 	processed
+     [java] 1334 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_actionButton\CreateFile_data.xsql 	processed
+     [java] 1358 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_actionButton\CreateFromMultiple_Receipt_data.xsql 	processed
+     [java] 1376 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_actionButton\CreateFromMultiple_Shipment_data.xsql 	processed
+     [java] 1392 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_actionButton\CreateFrom_Bank_data.xsql 	processed
+     [java] 1425 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_actionButton\CreateFrom_CRemittance_data.xsql 	processed
+     [java] 1444 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_actionButton\CreateFrom_DPManagement_data.xsql 	processed
+     [java] 1466 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_actionButton\CreateFrom_Invoice_data.xsql 	processed
+     [java] 1553 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_actionButton\CreateFrom_Settlement_data.xsql 	processed
+     [java] 1572 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_actionButton\CreateFrom_Shipment_data.xsql 	processed
+     [java] 1643 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_actionButton\CreateRegFactAcct_data.xsql 	processed
+     [java] 1682 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_actionButton\CreateVatRegisters_data.xsql 	processed
+     [java] 1694 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_actionButton\DropRegFactAcct_data.xsql 	processed
+     [java] 1704 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_actionButton\EditCCPMeasureValues_data.xsql 	processed
+     [java] 1716 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_actionButton\EditCCPMeasureValues_Hours_data.xsql 	processed
+     [java] 1724 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_actionButton\EditCCPMeasureValues_Values_data.xsql 	processed
+     [java] 1733 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_actionButton\ExpenseSOrder_data.xsql 	processed
+     [java] 1759 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_actionButton\ExportReferenceData_data.xsql 	processed
+     [java] 1768 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_actionButton\InsertAcces_data.xsql 	processed
+     [java] 1781 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_actionButton\ModuleCombo_data.xsql 	processed
+     [java] 1790 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_actionButton\Posted_data.xsql 	processed
+     [java] 1801 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_actionButton\ProjectClose_data.xsql 	processed
+     [java] 1813 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_actionButton\ProjectCopyFrom_data.xsql 	processed
+     [java] 1834 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_actionButton\ProjectSetType_data.xsql 	processed
+     [java] 1861 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_actionButton\TaxPayment.xsql 	processed
+     [java] 1873 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_actionButton\TaxRegister.xsql 	processed
+     [java] 1883 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_actionButton\TaxRegisterType.xsql 	processed
+     [java] 1890 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_actionButton\TyperemittanceCombo_data.xsql 	processed
+     [java] 1897 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_actionButton\UpdateMaintenanceScheduled_data.xsql 	processed
+     [java] 1909 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_callouts\LocatorCombo_data.xsql 	processed
+     [java] 1918 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_callouts\SE_Expense_Amount_data.xsql 	processed
+     [java] 1931 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_callouts\SE_Expense_BP_Project_data.xsql 	processed
+     [java] 1943 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_callouts\SE_Expense_Product_data.xsql 	processed
+     [java] 1960 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_callouts\SE_ExternalPOS_BPartner_data.xsql 	processed
+     [java] 1968 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_callouts\SE_InOut_DocType_data.xsql 	processed
+     [java] 1978 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_callouts\SE_Invoice_BPartner_data.xsql 	processed
+     [java] 1987 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_callouts\SE_Invoice_Project_data.xsql 	processed
+     [java] 1995 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_callouts\SE_Order_BPartner_data.xsql 	processed
+     [java] 2012 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_callouts\SE_Order_Project_data.xsql 	processed
+     [java] 2020 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_callouts\SE_PeriodNo_data.xsql 	processed
+     [java] 2030 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_callouts\SE_Period_Control_data.xsql 	processed
+     [java] 2040 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_callouts\SE_Pricelist_Active_data.xsql 	processed
+     [java] 2048 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_callouts\SE_ProjectLine_Value_data.xsql 	processed
+     [java] 2063 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_callouts\SE_Proposal_BPartner_data.xsql 	processed
+     [java] 2084 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_callouts\SE_Taxes_Active_data.xsql 	processed
+     [java] 2094 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_callouts\SL_BankStmt_Amount_data.xsql 	processed
+     [java] 2105 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_callouts\SL_CashJournal_Amounts_data.xsql 	processed
+     [java] 2120 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_callouts\SL_CCPMeasure_Group_data.xsql 	processed
+     [java] 2127 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_callouts\SL_Charge_data.xsql 	processed
+     [java] 2135 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_callouts\SL_CostcenterEmployee_SalaryCategory_data.xsql 	processed
+     [java] 2142 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_callouts\SL_GlobalUse_Product_data.xsql 	processed
+     [java] 2151 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_callouts\SL_InOutLine_Locator_data.xsql 	processed
+     [java] 2161 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_callouts\SL_InOutLine_Product_data.xsql 	processed
+     [java] 2172 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_callouts\SL_Internal_Consumption_Product_data.xsql 	processed
+     [java] 2183 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_callouts\SL_Inventory_Locator_data.xsql 	processed
+     [java] 2193 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_callouts\SL_InvoiceTax_Amt_data.xsql 	processed
+     [java] 2202 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_callouts\SL_Invoice_Amt_data.xsql 	processed
+     [java] 2216 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_callouts\SL_Invoice_Conversion_data.xsql 	processed
+     [java] 2249 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_callouts\SL_Invoice_Tax_data.xsql 	processed
+     [java] 2395 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_callouts\SL_IsDefault_data.xsql 	processed
+     [java] 2436 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_callouts\SL_JournalLineAmt_data.xsql 	processed
+     [java] 2450 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_callouts\SL_Journal_Period_data.xsql 	processed
+     [java] 2463 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_callouts\SL_MInOutTraceReports_data.xsql 	processed
+     [java] 2479 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_callouts\SL_Order_Amt_data.xsql 	processed
+     [java] 2492 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_callouts\SL_Order_DocType_data.xsql 	processed
+     [java] 2510 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_callouts\SL_Order_PriceList_data.xsql 	processed
+     [java] 2518 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_callouts\SL_Order_Product_data.xsql 	processed
+     [java] 2530 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_callouts\SL_Order_Stock_data.xsql 	processed
+     [java] 2542 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_callouts\SL_Order_Tax_data.xsql 	processed
+     [java] 2551 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_callouts\SL_Payment_Amounts_data.xsql 	processed
+     [java] 2567 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_callouts\SL_Payment_DocType_data.xsql 	processed
+     [java] 2585 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_callouts\SL_ProductionPlan_WRPhase_data.xsql 	processed
+     [java] 2601 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_callouts\SL_Production_Product_data.xsql 	processed
+     [java] 2620 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_callouts\SL_ProjectPlanned_Amt_data.xsql 	processed
+     [java] 2630 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_callouts\SL_Project_Margin_data.xsql 	processed
+     [java] 2640 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_callouts\SL_Project_PriceList_data.xsql 	processed
+     [java] 2647 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_callouts\SL_Proposal_Product_data.xsql 	processed
+     [java] 2657 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_callouts\SL_RequisitionLine_Amt_data.xsql 	processed
+     [java] 2670 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_callouts\SL_RequisitionLine_Conversion_data.xsql 	processed
+     [java] 2693 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_callouts\SL_RequisitionLine_Product_data.xsql 	processed
+     [java] 2707 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_callouts\SL_RequisitionOrder_Order_data.xsql 	processed
+     [java] 2718 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_callouts\SL_Requisition_BPartner_data.xsql 	processed
+     [java] 2725 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_callouts\SL_ScheduledMaintenance_Maintenance_data.xsql 	processed
+     [java] 2733 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_callouts\SL_SequenceProduct_Product_data.xsql 	processed
+     [java] 2745 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_callouts\SL_WorkRequirement_ProcessPlan_data.xsql 	processed
+     [java] 2753 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_callouts\SL_WorkRequirement_Sequence.xsql 	processed
+     [java] 2760 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_callouts\SL_WRPhaseProduct_Product_data.xsql 	processed
+     [java] 2772 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_callouts\SL_WRPhase_Sequence_data.xsql 	processed
+     [java] 2783 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_combos\OrganizationCombo_data.xsql 	processed
+     [java] 2799 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\Account_data.xsql 	processed
+     [java] 2811 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\AcctSchemaElement_data.xsql 	processed
+     [java] 2819 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\AcctSchema_data.xsql 	processed
+     [java] 2831 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\AcctServer_data.xsql 	processed
+     [java] 2895 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\AlertManagement_data.xsql 	processed
+     [java] 2907 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\CallAcctServer_data.xsql 	processed
+     [java] 2915 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\Client_data.xsql 	processed
+     [java] 2922 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\DocAmortization_data.xsql 	processed
+     [java] 2931 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\DocBank_data.xsql 	processed
+     [java] 2943 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\DocCash_data.xsql 	processed
+     [java] 2953 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\DocCostAdjustment_data.xsql 	processed
+     [java] 2961 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\DocDoubtfulDebt_data.xsql 	processed
+     [java] 2968 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\DocDPManagement_data.xsql 	processed
+     [java] 2981 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\DocFINFinAccTransaction_data.xsql 	processed
+     [java] 2989 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\DocFINPayment_data.xsql 	processed
+     [java] 2997 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\DocGLJournal_data.xsql 	processed
+     [java] 3010 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\DocInOut_data.xsql 	processed
+     [java] 3023 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\DocInternalConsumption_data.xsql 	processed
+     [java] 3032 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\DocInventory_data.xsql 	processed
+     [java] 3043 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\DocInvoice_data.xsql 	processed
+     [java] 3076 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\DocLandedCost_data.xsql 	processed
+     [java] 3086 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\DocLCCost_data.xsql 	processed
+     [java] 3095 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\DocLineAmortization_data.xsql 	processed
+     [java] 3103 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\DocLineBank_data.xsql 	processed
+     [java] 3114 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\DocLineCash_data.xsql 	processed
+     [java] 3125 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\DocLineCostAdjustment_data.xsql 	processed
+     [java] 3133 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\DocLineDPManagement_data.xsql 	processed
+     [java] 3140 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\DocLineGLJournal_data.xsql 	processed
+     [java] 3150 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\DocLineInOut_data.xsql 	processed
+     [java] 3158 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\DocLineInternalConsumption_data.xsql 	processed
+     [java] 3165 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\DocLineInventory_data.xsql 	processed
+     [java] 3174 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\DocLineInvoice_data.xsql 	processed
+     [java] 3191 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\DocLineLandedCost_data.xsql 	processed
+     [java] 3202 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\DocLineLCCost_data.xsql 	processed
+     [java] 3216 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\DocLineMovement_data.xsql 	processed
+     [java] 3223 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\DocLineOrder_data.xsql 	processed
+     [java] 3231 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\DocLinePayment_data.xsql 	processed
+     [java] 3240 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\DocLineProduction_data.xsql 	processed
+     [java] 3248 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\DocLine_data.xsql 	processed
+     [java] 3255 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\DocMatchInv_data.xsql 	processed
+     [java] 3276 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\DocMovement_data.xsql 	processed
+     [java] 3284 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\DocOrder_data.xsql 	processed
+     [java] 3294 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\DocPayment_data.xsql 	processed
+     [java] 3312 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\DocProduction_data.xsql 	processed
+     [java] 3327 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\DocTax_data.xsql 	processed
+     [java] 3337 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\FactLine_data.xsql 	processed
+     [java] 3351 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\GenerateInvoicesmanual_data.xsql 	processed
+     [java] 3370 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\GenerateShipmentsmanual_data.xsql 	processed
+     [java] 3381 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\Heartbeat_data.xsql 	processed
+     [java] 3389 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\InitialOrgSetup_data.xsql 	processed
+     [java] 3399 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\LanguageCombo_data.xsql 	processed
+     [java] 3408 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\MaterialReceiptPendingLines_data.xsql 	processed
+     [java] 3418 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\MaterialReceiptPending_data.xsql 	processed
+     [java] 3447 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\ModuleManagement_data.xsql 	processed
+     [java] 3464 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\MonedaCombo_data.xsql 	processed
+     [java] 3475 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\Organization_data.xsql 	processed
+     [java] 3485 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\ProductInfo_data.xsql 	processed
+     [java] 3501 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\Register_data.xsql 	processed
+     [java] 3511 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\RequisitionToOrder_data.xsql 	processed
+     [java] 3555 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\RoleCombo_data.xsql 	processed
+     [java] 3580 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\Role_data.xsql 	processed
+     [java] 3601 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\ShowSessionPreferences_data.xsql 	processed
+     [java] 3618 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\ShowSessionVariables_data.xsql 	processed
+     [java] 3629 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\SQLExecutor_data.xsql 	processed
+     [java] 3639 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\Translation_data.xsql 	processed
+     [java] 3677 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\UpdateReferenceData_data.xsql 	processed
+     [java] 3698 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\Warehouse_data.xsql 	processed
+     [java] 3706 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_forms\WithholdingManual_data.xsql 	processed
+     [java] 3713 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_help\DisplayHelp_data.xsql 	processed
+     [java] 3726 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_process\AcctServerProcess_data.xsql 	processed
+     [java] 3740 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_process\AlertProcess_data.xsql 	processed
+     [java] 3753 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_process\CashBankOperations_data.xsql 	processed
+     [java] 3776 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_process\ClientCombo_data.xsql 	processed
+     [java] 3789 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_process\CopyFromGLJournal_data.xsql 	processed
+     [java] 3806 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_process\CreateAccountingReport_data.xsql 	processed
+     [java] 3855 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_process\CreateCashFlowStatement_data.xsql 	processed
+     [java] 3924 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_process\CreateTaxReport_data.xsql 	processed
+     [java] 3943 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_process\ExpenseAPInvoice_data.xsql 	processed
+     [java] 3996 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_process\PriceListCreateAll_data.xsql 	processed
+     [java] 4007 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_process\RegisterModule_data.xsql 	processed
+     [java] 4022 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_process\SystemInfo_data.xsql 	processed
+     [java] 4030 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_process\UpdateAuditTrail_data.xsql 	processed
+     [java] 4046 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\AccountNumberCombo_data.xsql 	processed
+     [java] 4055 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\AttributeSetInstanceCombo_data.xsql 	processed
+     [java] 4063 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\GeneralAccountingReports_data.xsql 	processed
+     [java] 4083 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\InoutEdition_data.xsql 	processed
+     [java] 4095 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\InvoiceCustomerEdition_data.xsql 	processed
+     [java] 4109 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\InvoiceEdition_data.xsql 	processed
+     [java] 4123 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\MInOutTraceReports_data.xsql 	processed
+     [java] 4145 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\OrderEdition_data.xsql 	processed
+     [java] 4161 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\Organization_data.xsql 	processed
+     [java] 4175 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\ProcessPlanCombo_data.xsql 	processed
+     [java] 4186 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\ProcessPlanVersionCombo_data.xsql 	processed
+     [java] 4198 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\ReportAcctRedirectUtility_data.xsql 	processed
+     [java] 4213 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\ReportAgingBalance_data.xsql 	processed
+     [java] 4233 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\ReportAnnualCertification_data.xsql 	processed
+     [java] 4309 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\ReportAssetDepreciationSchedule_data.xsql 	processed
+     [java] 4402 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\ReportBankJR_data.xsql 	processed
+     [java] 4478 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\ReportBudgetGenerateExcel_data.xsql 	processed
+     [java] 4492 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\ReportCashflowForecast_data.xsql 	processed
+     [java] 4517 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\ReportCashFlow_data.xsql 	processed
+     [java] 4543 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\ReportCashJR_data.xsql 	processed
+     [java] 4552 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\ReportDebtPaymentTrack_data.xsql 	processed
+     [java] 4582 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\ReportDebtPayment_data.xsql 	processed
+     [java] 4601 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\ReportExpense_data.xsql 	processed
+     [java] 4616 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\ReportGeneralLedgerJournalDetail_data.xsql 	processed
+     [java] 4625 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\ReportGeneralLedgerJournal_data.xsql 	processed
+     [java] 4656 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\ReportGeneralLedger_data.xsql 	processed
+     [java] 4814 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\ReportGuaranteeDate_data.xsql 	processed
+     [java] 4830 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\ReportInvoiceCustomerDimensionalAnalysesJR_data.xsql 	processed
+     [java] 4951 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\ReportInvoiceCustomerDimensionalAnalysesJR_legacy_data.xsql 	processed
+     [java] 4987 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\ReportInvoiceDiscount_data.xsql 	processed
+     [java] 4999 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\ReportInvoices_data.xsql 	processed
+     [java] 5020 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\ReportInvoiceVendorDimensionalAnalysesJR_data.xsql 	processed
+     [java] 5052 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\ReportMaterialDimensionalAnalysesJR_data.xsql 	processed
+     [java] 5080 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\ReportNotPosted_data.xsql 	processed
+     [java] 5096 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\ReportOffer_data.xsql 	processed
+     [java] 5106 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\ReportOrderNotInvoice_data.xsql 	processed
+     [java] 5119 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\ReportParetoProductLegacy_data.xsql 	processed
+     [java] 5130 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\ReportParetoProduct_data.xsql 	processed
+     [java] 5149 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\ReportPendingProductionJr_data.xsql 	processed
+     [java] 5158 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\ReportPricelist_data.xsql 	processed
+     [java] 5169 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\ReportProductionCost_data.xsql 	processed
+     [java] 5198 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\ReportProductionRun_data.xsql 	processed
+     [java] 5208 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\ReportProduction_data.xsql 	processed
+     [java] 5220 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\ReportProductMovement_data.xsql 	processed
+     [java] 5245 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\ReportProjectBuildingSite_data.xsql 	processed
+     [java] 5258 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\ReportProjectProfitability_data.xsql 	processed
+     [java] 5280 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\ReportProjectProgress_data.xsql 	processed
+     [java] 5290 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\ReportPurchaseDimensionalAnalysesJR_data.xsql 	processed
+     [java] 5313 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\ReportRefundSalesDimensionalAnalyses_data.xsql 	processed
+     [java] 5341 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\ReportSalesDimensionalAnalyzeJR_data.xsql 	processed
+     [java] 5391 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\ReportSalesOrderInvoiced_data.xsql 	processed
+     [java] 5417 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\ReportSalesOrderOpenItem_data.xsql 	processed
+     [java] 5428 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\ReportSalesOrderProvided_data.xsql 	processed
+     [java] 5451 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\ReportShipmentDimensionalAnalyzeJR_data.xsql 	processed
+     [java] 5493 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\ReportShipper_data.xsql 	processed
+     [java] 5508 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\ReportToInvoiceConsignment_data.xsql 	processed
+     [java] 5524 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\ReportTotalProductTemplate_data.xsql 	processed
+     [java] 5537 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\ReportTrialBalanceDetail_data.xsql 	processed
+     [java] 5560 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\ReportTrialBalance_data.xsql 	processed
+     [java] 5593 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\ReportValuationStock_data.xsql 	processed
+     [java] 5605 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\ReportValuationStock_legacy_data.xsql 	processed
+     [java] 5616 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\ReportWarehouseControl_data.xsql 	processed
+     [java] 5627 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\ReportWarehousePartner_data.xsql 	processed
+     [java] 5639 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\ReportWorkRequirementDailyEnv_data.xsql 	processed
+     [java] 5650 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\ReportWorkRequirementDaily_data.xsql 	processed
+     [java] 5661 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\ReportWorkRequirementJR_data.xsql 	processed
+     [java] 5673 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\ad_reports\SubreportOfferProduct_data.xsql 	processed
+     [java] 5685 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\businessUtility\AccountingSchemaMisc_data.xsql 	processed
+     [java] 5694 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\businessUtility\AccountTree_data.xsql 	processed
+     [java] 5718 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\businessUtility\AuditTrailPopup_data.xsql 	processed
+     [java] 5736 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\businessUtility\BpartnerMisc_data.xsql 	processed
+     [java] 5746 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\businessUtility\Buscador_data.xsql 	processed
+     [java] 5772 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\businessUtility\DataTypeCombo_data.xsql 	processed
+     [java] 5781 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\businessUtility\Email_data.xsql 	processed
+     [java] 5795 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\businessUtility\EndYearCloseUtility_data.xsql 	processed
+     [java] 5832 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\businessUtility\GetPriceOffer_data.xsql 	processed
+     [java] 5842 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\businessUtility\Heartbeat_data.xsql 	processed
+     [java] 5852 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\businessUtility\MessageJS_data.xsql 	processed
+     [java] 5870 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\businessUtility\PAttributeSet_data.xsql 	processed
+     [java] 5882 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\businessUtility\PrinterReports_data.xsql 	processed
+     [java] 5891 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\businessUtility\Registration_data.xsql 	processed
+     [java] 5900 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\businessUtility\TabAttachments_data.xsql 	processed
+     [java] 5916 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\businessUtility\TabFilter_data.xsql 	processed
+     [java] 5925 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\businessUtility\Tax_data.xsql 	processed
+     [java] 5932 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\businessUtility\Tree_data.xsql 	processed
+     [java] 5942 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\businessUtility\WindowTabs_data.xsql 	processed
+     [java] 5962 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\info\AccountElementValue_data.xsql 	processed
+     [java] 5979 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\info\Account_data.xsql 	processed
+     [java] 5999 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\info\AttributeSetInstance_data.xsql 	processed
+     [java] 6012 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\info\BusinessPartnerMultiple_data.xsql 	processed
+     [java] 6024 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\info\BusinessPartner_data.xsql 	processed
+     [java] 6038 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\info\DebtPayment_data.xsql 	processed
+     [java] 6049 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\info\DocTypeMultiple_data.xsql 	processed
+     [java] 6058 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\info\ImageInfo_data.xsql 	processed
+     [java] 6066 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\info\InvoiceLine_data.xsql 	processed
+     [java] 6078 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\info\Invoice_data.xsql 	processed
+     [java] 6090 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\info\Location_Search_data.xsql 	processed
+     [java] 6099 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\info\LocatorMultiple_data.xsql 	processed
+     [java] 6109 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\info\Locator_data.xsql 	processed
+     [java] 6119 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\info\PriceListVersionCombo_data.xsql 	processed
+     [java] 6129 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\info\ProductComplete_data.xsql 	processed
+     [java] 6148 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\info\ProductMultiple_data.xsql 	processed
+     [java] 6157 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\info\Product_data.xsql 	processed
+     [java] 6170 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\info\ProjectMultiple_data.xsql 	processed
+     [java] 6179 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\info\Project_data.xsql 	processed
+     [java] 6189 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\info\SalesOrderLine_data.xsql 	processed
+     [java] 6210 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\info\SalesOrder_data.xsql 	processed
+     [java] 6227 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\info\SelectorUtility_data.xsql 	processed
+     [java] 6244 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\info\ShipmentReceiptLine_data.xsql 	processed
+     [java] 6357 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\info\ShipmentReceipt_data.xsql 	processed
+     [java] 6391 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\info\WarehouseCombo_data.xsql 	processed
+     [java] 6436 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\modules\ApplyModule_data.xsql 	processed
+     [java] 6447 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\modules\ExtractModule_data.xsql 	processed
+     [java] 6457 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\modules\ImportModule_data.xsql 	processed
+     [java] 6473 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\modules\ModuleReferenceDataClientTree_data.xsql 	processed
+     [java] 6488 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\modules\ModuleReferenceDataOrgTree_data.xsql 	processed
+     [java] 6501 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\modules\ModuleTree_data.xsql 	processed
+     [java] 6515 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\modules\UninstallModule_data.xsql 	processed
+     [java] 6526 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\modules\VersionUtility_data.xsql 	processed
+     [java] 6537 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\reference\List_data.xsql 	processed
+     [java] 6547 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\reference\PInstanceProcess_data.xsql 	processed
+     [java] 6558 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\security\SessionLogin_data.xsql 	processed
+     [java] 6570 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\utility\Access_data.xsql 	processed
+     [java] 6579 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\utility\Alert_data.xsql 	processed
+     [java] 6588 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\utility\AttributeSetInstanceValue_data.xsql 	processed
+     [java] 6603 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\utility\ComboTableQuery_data.xsql 	processed
+     [java] 6616 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\utility\DateTime_data.xsql 	processed
+     [java] 6630 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\utility\DocumentNo_data.xsql 	processed
+     [java] 6637 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\utility\DynamicJS_data.xsql 	processed
+     [java] 6644 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\utility\ErrorTextParserORACLE_data.xsql 	processed
+     [java] 6652 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\utility\ErrorTextParser_data.xsql 	processed
+     [java] 6662 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\utility\ExportGrid_data.xsql 	processed
+     [java] 6669 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\utility\Menu_data.xsql 	processed
+     [java] 6685 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\utility\MessageBD_data.xsql 	processed
+     [java] 6693 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\utility\OpenPentaho_data.xsql 	processed
+     [java] 6701 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\utility\poc\Poc_Configuration_data.xsql 	processed
+     [java] 6710 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\utility\PrintJR_data.xsql 	processed
+     [java] 6718 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\utility\ReferencedLink_data.xsql 	processed
+     [java] 6728 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\utility\ReferencedTables_data.xsql 	processed
+     [java] 6742 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\utility\reporting\EmailDefinition_data.xsql 	processed
+     [java] 6752 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\utility\reporting\printing\Email_data.xsql 	processed
+     [java] 6761 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\utility\reporting\printing\Poc_data.xsql 	processed
+     [java] 6776 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\utility\reporting\printing\PrintController_data.xsql 	processed
+     [java] 6785 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\utility\reporting\printing\Tools_data.xsql 	processed
+     [java] 6793 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\utility\reporting\Report_data.xsql 	processed
+     [java] 6816 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\utility\reporting\Template_data.xsql 	processed
+     [java] 6826 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\utility\SystemInfo_data.xsql 	processed
+     [java] 6848 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\utility\TableSQLQuery_data.xsql 	processed
+     [java] 6871 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\utility\UsedByLink_data.xsql 	processed
+     [java] 6899 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\utility\Utility_data.xsql 	processed
+     [java] 6913 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\utility\VerticalMenu_data.xsql 	processed
+     [java] 6925 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\utility\WindowAccess_data.xsql 	processed
+     [java] 6936 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\utility\WindowTreeChecks_data.xsql 	processed
+     [java] 6945 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpCommon\utility\WindowTree_data.xsql 	processed
+     [java] 6986 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpReports\ReportRegisterByVatJR_data.xsql 	processed
+     [java] 6995 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpReports\ReportRegisterLineJR_data.xsql 	processed
+     [java] 7003 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpReports\RptC_Bpartnercontact_data.xsql 	processed
+     [java] 7012 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpReports\RptC_BpartnerCustomer_data.xsql 	processed
+     [java] 7022 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpReports\RptC_Bpartnerlocation_data.xsql 	processed
+     [java] 7030 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpReports\RptC_BpartnerSales_data.xsql 	processed
+     [java] 7069 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpReports\RptC_BpartnerVendor_data.xsql 	processed
+     [java] 7078 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpReports\RptC_Bpartner_data.xsql 	processed
+     [java] 7089 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpReports\RptC_Invoice_data.xsql 	processed
+     [java] 7096 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpReports\RptC_Invoice_Header_data.xsql 	processed
+     [java] 7104 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpReports\RptC_Order_Header_data.xsql 	processed
+     [java] 7112 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpReports\RptC_ProposalJr_data.xsql 	processed
+     [java] 7120 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpReports\RptC_Remittance_data.xsql 	processed
+     [java] 7127 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpReports\RptC_Settlement_data.xsql 	processed
+     [java] 7134 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpReports\RptC_Settlement_Header_data.xsql 	processed
+     [java] 7142 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpReports\RptC_Settlement_Lines_data.xsql 	processed
+     [java] 7149 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpReports\RptMA_CCP_Group_data.xsql 	processed
+     [java] 7157 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpReports\RptMA_CCP_Measures_data.xsql 	processed
+     [java] 7164 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpReports\RptMA_CCP_Measures_Hours_data.xsql 	processed
+     [java] 7172 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpReports\RptMA_CCP_Measures_Values_data.xsql 	processed
+     [java] 7179 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpReports\RptMA_ProcessPlan_data.xsql 	processed
+     [java] 7187 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpReports\RptM_Inout_data.xsql 	processed
+     [java] 7197 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpReports\RptM_Inout_Header_data.xsql 	processed
+     [java] 7204 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpReports\RptM_Inout_Lines_data.xsql 	processed
+     [java] 7212 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpReports\RptM_Movement_data.xsql 	processed
+     [java] 7221 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpReports\RptPromissoryNoteAfter_data.xsql 	processed
+     [java] 7234 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpReports\RptPromissoryNoteError_data.xsql 	processed
+     [java] 7240 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpReports\RptPromissoryNoteHeader_data.xsql 	processed
+     [java] 7253 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpReports\RptPromissoryNoteTree_data.xsql 	processed
+     [java] 7260 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpReports\RptPromissoryNote_data.xsql 	processed
+     [java] 7268 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpReports\TaxPayment_data.xsql 	processed
+     [java] 7275 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\erpReports\TaxRegister_data.xsql 	processed
+     [java] 7285 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\materialmgmt\ReservationUtils_data.xsql 	processed
+     [java] 7293 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\materialmgmt\StockUtils_data.xsql 	processed
+     [java] 7304 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\reference\ui\TableSQLQuery_data.xsql 	processed
+     [java] 7314 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\scheduling\Pinstance_data.xsql 	processed
+     [java] 7323 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\scheduling\ProcessRequest_data.xsql 	processed
+     [java] 7333 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\scheduling\ProcessRun_data.xsql 	processed
+     [java] 7343 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\scheduling\Process_data.xsql 	processed
+     [java] 7351 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\scheduling\Trigger_data.xsql 	processed
+     [java] 7365 [main] INFO  org.openbravo.data.Sqlc - File: .\org\openbravo\test\system\ErrorTextParserTest_data.xsql 	processed
+     [java] 0    [main] INFO  org.openbravo.data.Sqlc - strFileProperties: G:\Development\Projects\Openbravo\config/Openbravo.properties
+     [java] 796  [main] INFO  org.openbravo.data.Sqlc - javaDateFormat: dd-MM-yyyy
+     [java] 803  [main] INFO  org.openbravo.data.Sqlc - directory source: G:\Development\Projects\Openbravo\modules
+     [java] 809  [main] INFO  org.openbravo.data.Sqlc - directory destiny: G:\Development\Projects\Openbravo\build\javasqlc/src
+     [java] 814  [main] INFO  org.openbravo.data.Sqlc - file termination: .xsql
+     [java] 820  [main] INFO  org.openbravo.data.Sqlc - file connection: G:\Development\Projects\Openbravo\config/Openbravo.properties
+     [java] 825  [main] INFO  org.openbravo.data.Sqlc - Write TXT Files: false
+     [java] 830  [main] INFO  org.openbravo.data.Sqlc - QueryExecutionStrategy: traditional
+     [java] 835  [main] INFO  org.openbravo.data.Sqlc - Loading driver: org.postgresql.Driver
+     [java] 839  [main] INFO  org.openbravo.data.Sqlc - Driver loaded
+     [java] 881  [main] INFO  org.openbravo.data.Sqlc - connect made
+     [java] 902  [main] INFO  org.openbravo.data.Sqlc - File: G:\Development\Projects\Openbravo\modules\org.openbravo.advpaymentmngt\src\org\openbravo\advpaymentmngt\utility\APRMUtility_data.xsql 	processed
+     [java] 953  [main] INFO  org.openbravo.data.Sqlc - File: G:\Development\Projects\Openbravo\modules\org.openbravo.client.application\src\org\openbravo\client\application\AlertActionHandler_data.xsql 	processed
+     [java] 974  [main] INFO  org.openbravo.data.Sqlc - File: G:\Development\Projects\Openbravo\modules\org.openbravo.client.kernel\src\org\openbravo\client\kernel\KernelUtils_data.xsql 	processed
+     [java] 996  [main] INFO  org.openbravo.data.Sqlc - File: G:\Development\Projects\Openbravo\modules\org.openbravo.financial.cashflowforecast\src\org\openbravo\financial\cashflowforecast\CashflowForecast_data.xsql 	processed
+     [java] 1044 [main] INFO  org.openbravo.data.Sqlc - File: G:\Development\Projects\Openbravo\modules\org.openbravo.reports.ordersawaitingdelivery\src\org\openbravo\reports\ordersawaitingdelivery\erpCommon\ad_reports\ReportOrderNotShipped_data.xsql 	processed
+     [java] 1085 [main] INFO  org.openbravo.data.Sqlc - File: G:\Development\Projects\Openbravo\modules\org.openbravo.retail.posterminal\src\org\openbravo\retail\posterminal\OrderGroupingProcessor_data.xsql 	processed
+     [java] 1122 [main] INFO  org.openbravo.data.Sqlc - File: G:\Development\Projects\Openbravo\modules\org.openbravo.service.datasource\src\org\openbravo\service\datasource\TreeDatasourceService_data.xsql 	processed
+     [java] 1141 [main] INFO  org.openbravo.data.Sqlc - File: G:\Development\Projects\Openbravo\modules\org.openbravo.utility.multiplebpselector\src\org\openbravo\utility\multiplebpselector\BusinessPartnerSelectorMULTIBP_data.xsql 	processed
+     [copy] Copying 1 file to G:\Development\Projects\Openbravo\srcAD
+     [copy] Copying 1 file to G:\Development\Projects\Openbravo\srcAD
+
+buildAD:
+     [java] 0    [main] INFO  org.openbravo.data.Sqlc - strFileProperties: G:\Development\Projects\Openbravo\config/Openbravo.properties
+     [java] 747  [main] INFO  org.openbravo.data.Sqlc - javaDateFormat: dd-MM-yyyy
+     [java] 755  [main] INFO  org.openbravo.data.Sqlc - directory source: ../srcAD
+     [java] 761  [main] INFO  org.openbravo.data.Sqlc - directory destiny: G:\Development\Projects\Openbravo\build\javasqlc/src
+     [java] 767  [main] INFO  org.openbravo.data.Sqlc - file termination: .xsql
+     [java] 773  [main] INFO  org.openbravo.data.Sqlc - file connection: G:\Development\Projects\Openbravo\config/Openbravo.properties
+     [java] 777  [main] INFO  org.openbravo.data.Sqlc - Write TXT Files: false
+     [java] 783  [main] INFO  org.openbravo.data.Sqlc - QueryExecutionStrategy: traditional
+     [java] 788  [main] INFO  org.openbravo.data.Sqlc - Loading driver: org.postgresql.Driver
+     [java] 794  [main] INFO  org.openbravo.data.Sqlc - Driver loaded
+     [java] 831  [main] INFO  org.openbravo.data.Sqlc - connect made
+     [java] 846  [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpCommon\ad_actionButton\ActionButtonSQLDefault_data.xsql 	processed
+     [java] 907  [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpCommon\reference\ActionButton_data.xsql 	processed
+     [java] 984  [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\Amortization\Header_data.xsql 	processed
+     [java] 1037 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\AssetGroup\Accounting_data.xsql 	processed
+     [java] 1074 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\AssetGroup\AssetCategory_data.xsql 	processed
+     [java] 1114 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\Assets\Assets_data.xsql 	processed
+     [java] 1161 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\Budget\Header_data.xsql 	processed
+     [java] 1185 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\BusinessPartnerCategory\Accounting_data.xsql 	processed
+     [java] 1219 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\BusinessPartnerCategory\BusinessPartnerCategory_data.xsql 	processed
+     [java] 1242 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\Commission\Header_data.xsql 	processed
+     [java] 1277 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\CommissionPayment\Header_data.xsql 	processed
+     [java] 1301 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\CostAdjustment\Header_data.xsql 	processed
+     [java] 1325 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\EndYearClose\EndYearClose_data.xsql 	processed
+     [java] 1354 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\FinancialAccount\Account_data.xsql 	processed
+     [java] 1455 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\FinancialAccount\ImportedBankStatements_data.xsql 	processed
+     [java] 1486 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\FinancialAccount\ReconciliationsFF8080813320657F0133209DE21B0042_data.xsql 	processed
+     [java] 1517 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\FinancialAccount\Transaction_data.xsql 	processed
+     [java] 1554 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\FiscalCalendar\Calendar_data.xsql 	processed
+     [java] 1579 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\FiscalCalendar\Year_data.xsql 	processed
+     [java] 1615 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\GeneralLedgerConfiguration\Defaults_data.xsql 	processed
+     [java] 1738 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\GeneralLedgerConfiguration\GeneralLedgerConfiguration_data.xsql 	processed
+     [java] 1761 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\GLJournal\Batch_data.xsql 	processed
+     [java] 1785 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\GLJournal\Header_data.xsql 	processed
+     [java] 1827 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\GLJournal\Lines_data.xsql 	processed
+     [java] 1863 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\GoodsMovements\Header_data.xsql 	processed
+     [java] 1888 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\GoodsReceipt\Header_data.xsql 	processed
+     [java] 1927 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\GoodsReceipt\Lines_data.xsql 	processed
+     [java] 1978 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\GoodsShipment\Header_data.xsql 	processed
+     [java] 2023 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\GoodsShipment\Lines_data.xsql 	processed
+     [java] 2088 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\LandedCost\Cost_data.xsql 	processed
+     [java] 2129 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\LandedCost\Header_data.xsql 	processed
+     [java] 2167 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\Language\Language_data.xsql 	processed
+     [java] 2193 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\ManageRequisitions\Header_data.xsql 	processed
+     [java] 2222 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\ManageRequisitions\Lines_data.xsql 	processed
+     [java] 2281 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\MatchedInvoices\MatchedInvoice_data.xsql 	processed
+     [java] 2311 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\org\openbravo\advpaymentmngt\DoubtfulDebt\DoubtfulDebt9D859A2A50F44562AFA21AAF2DF91B8A_data.xsql 	processed
+     [java] 2339 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\org\openbravo\advpaymentmngt\DoubtfulDebtRun\DoubtfulDebtE4DC11F751F34F0DAE11A4D856CD99EB_data.xsql 	processed
+     [java] 2393 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\org\openbravo\advpaymentmngt\DoubtfulDebtRun\DoubtfulDebtRunFA66A130BE8B48E88BF4F5A6E2FA0CDD_data.xsql 	processed
+     [java] 2441 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\org\openbravo\retail\config\Assortment\Assortment09EF738DE00C4500819EC13BB48DEAE2_data.xsql 	processed
+     [java] 2464 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\Organization\Organization_data.xsql 	processed
+     [java] 2494 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\PaymentIn\Header_data.xsql 	processed
+     [java] 2527 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\PaymentOut\Header_data.xsql 	processed
+     [java] 2566 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\PhysicalInventory\Header_data.xsql 	processed
+     [java] 2589 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\PriceList\PriceListVersion_data.xsql 	processed
+     [java] 2607 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\PriceList\PriceList_data.xsql 	processed
+     [java] 2623 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\Product\Product_data.xsql 	processed
+     [java] 2690 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\ProductCategory\Accounting_data.xsql 	processed
+     [java] 2710 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\ProductCategory\ProductCategory_data.xsql 	processed
+     [java] 2726 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\PurchaseInvoice\Header_data.xsql 	processed
+     [java] 2772 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\PurchaseInvoice\Lines_data.xsql 	processed
+     [java] 2823 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\PurchaseOrder\Header_data.xsql 	processed
+     [java] 2853 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\PurchaseOrder\Lines_data.xsql 	processed
+     [java] 2893 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\Requisition\Requisition_data.xsql 	processed
+     [java] 2916 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\ReturnfromCustomer\Header_data.xsql 	processed
+     [java] 2953 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\ReturnMaterialReceipt\Header_data.xsql 	processed
+     [java] 2983 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\ReturntoVendor\Header_data.xsql 	processed
+     [java] 3014 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\ReturntoVendorShipment\Header_data.xsql 	processed
+     [java] 3045 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\SalesInvoice\Header_data.xsql 	processed
+     [java] 3150 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\SalesInvoice\Lines_data.xsql 	processed
+     [java] 3201 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\SalesOrder\Header_data.xsql 	processed
+     [java] 3253 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\SalesOrder\Lines_data.xsql 	processed
+     [java] 3337 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\SalesQuotation\Header_data.xsql 	processed
+     [java] 3366 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\Session\Session_data.xsql 	processed
+     [java] 3382 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\SimpleGLJournal\Header_data.xsql 	processed
+     [java] 3406 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\SimpleGLJournal\Lines_data.xsql 	processed
+     [java] 3440 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\StockReservation\Reservation_data.xsql 	processed
+     [java] 3464 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\TablesandColumns\Table_data.xsql 	processed
+     [java] 3488 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\TaxPayment\Header_data.xsql 	processed
+     [java] 3515 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\WindowsTabsandFields\Tab_data.xsql 	processed
+     [java] 3548 [main] INFO  org.openbravo.data.Sqlc - File: ..\srcAD\org\openbravo\erpWindows\WindowsTabsandFields\Window_data.xsql 	processed
+
+compileSqlc:
+    [javac] Compiling 1925 source files to G:\Development\Projects\Openbravo\build\classes
+    [javac] Compiling 68 source files to G:\Development\Projects\Openbravo\build\classes
+    [javac] Compiling 71 source files to G:\Development\Projects\Openbravo\build\classes
+
+init:
+
+calculate.version:
+
+calculate.version.from.hg:
+
+calculate.version.from.file:
+
+cannot.find.version:
+
+calculate.instance.version:
+      [sql] Executing commands
+      [sql] 1 of 1 SQL statements executed successfully
+
+postsrc.modules:
+     [copy] Copying 88 files to G:\Development\Projects\Openbravo\WebContent\src-loc\design
+     [copy] Copying 127 files to G:\Development\Projects\Openbravo\build\classes
+
+postsrc:
+     [copy] Copying 3 files to G:\Development\Projects\Openbravo\build\classes
+     [copy] Copying 4 files to G:\Development\Projects\Openbravo\build\classes
+     [copy] Copying 317 files to G:\Development\Projects\Openbravo\WebContent\src-loc\design
+     [copy] Copying 18 files to G:\Development\Projects\Openbravo\WebContent\src-loc\design
+     [copy] Copying 251 files to G:\Development\Projects\Openbravo\WebContent\src-loc\design
+     [copy] Copying 30 files to G:\Development\Projects\Openbravo\WebContent\src-loc\design
+     [copy] Copying 106 files to G:\Development\Projects\Openbravo\WebContent\src-loc\design
+     [copy] Copying 1 file to G:\Development\Projects\Openbravo\WebContent\src-loc\design
+     [copy] Copying 1 file to G:\Development\Projects\Openbravo\WebContent\src-loc\design\org\openbravo\erpCommon\obps
+
+build.local.context:
+     [copy] Copying 1 file to G:\Development\Projects\Openbravo\WebContent
+     [copy] Copying 9 files to G:\Development\Projects\Openbravo\WebContent\WEB-INF
+     [copy] Copying 75 files to G:\Development\Projects\Openbravo\WebContent\WEB-INF\lib
+     [copy] Copying 21 files to G:\Development\Projects\Openbravo\WebContent\WEB-INF\lib
+
+build.web.folder:
+     [copy] Copying 3609 files to G:\Development\Projects\Openbravo\WebContent\web
+
+build.web.folder.skins:
+   [delete] Deleting directory G:\Development\Projects\Openbravo\WebContent\web\skins
+    [mkdir] Created dir: G:\Development\Projects\Openbravo\WebContent\web\skins
+    [mkdir] Created dir: G:\Development\Projects\Openbravo\WebContent\web\skins\ltr
+     [copy] Copying 598 files to G:\Development\Projects\Openbravo\WebContent\web\skins\ltr
+    [mkdir] Created dir: G:\Development\Projects\Openbravo\WebContent\web\skins\rtl
+     [copy] Copying 598 files to G:\Development\Projects\Openbravo\WebContent\web\skins\rtl
+
+build.web.folder.base:
+     [copy] Copying 2634 files to G:\Development\Projects\Openbravo\WebContent\web
+     [copy] Copied 303 empty directories to 1 empty directory under G:\Development\Projects\Openbravo\WebContent\web
+     [copy] Copying 72 files to G:\Development\Projects\Openbravo\WebContent\web\skins\ltr
+     [copy] Copying 72 files to G:\Development\Projects\Openbravo\WebContent\web\skins\rtl
+     [java] 0    [main] INFO  org.openbravo.translate.Translate - RTL Skin directory source: G:\Development\Projects\Openbravo\WebContent/web/skins/rtl
+     [java] 1447 [main] INFO  org.openbravo.translate.Translate - LTR Skin directory source: G:\Development\Projects\Openbravo\WebContent/web/skins/ltr
+     [java] 1501 [main] INFO  org.openbravo.translate.Translate - Processing RTL skin Default
+     [java] 1603 [main] INFO  org.openbravo.translate.Translate - Processing RTL skin Default
+     [java] 2712 [main] INFO  org.openbravo.translate.Translate - Processing RTL skin org.openbravo.userinterface.skin.250to300Comp
+     [java] 2726 [main] INFO  org.openbravo.translate.Translate - Processing RTL skin org.openbravo.userinterface.skin.250to300Comp
+     [java] 2772 [main] INFO  org.openbravo.translate.Translate - Processing LTR skin Default
+     [java] 2801 [main] INFO  org.openbravo.translate.Translate - Processing LTR skin org.openbravo.userinterface.skin.250to300Comp
+     [java] 2817 [main] INFO  org.openbravo.translate.Translate - Modified files: 1340
+
+minimizeJSandCSS:
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\html\en_US\StaticCommunityBranding-MyOB.css to G:\Development\Projects\Openbravo\WebContent\web\html\en_US\StaticCommunityBranding-MyOB.css
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\html\en_US\StaticCommunityBranding-MyOB.js to G:\Development\Projects\Openbravo\WebContent\web\html\en_US\StaticCommunityBranding-MyOB.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\images\Logos.css to G:\Development\Projects\Openbravo\WebContent\web\images\Logos.css
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\DHTMLgoodies\context-menu.js to G:\Development\Projects\Openbravo\WebContent\web\js\DHTMLgoodies\context-menu.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\DHTMLgoodies\drag-drop-folder-tree.js to G:\Development\Projects\Openbravo\WebContent\web\js\DHTMLgoodies\drag-drop-folder-tree.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\ajax.js to G:\Development\Projects\Openbravo\WebContent\web\js\ajax.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\appStatus.js to G:\Development\Projects\Openbravo\WebContent\web\js\appStatus.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\calculator.js to G:\Development\Projects\Openbravo\WebContent\web\js\calculator.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\callOut.js to G:\Development\Projects\Openbravo\WebContent\web\js\callOut.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\checkAvailableCredit.js to G:\Development\Projects\Openbravo\WebContent\web\js\checkAvailableCredit.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\default\CheckBox.js to G:\Development\Projects\Openbravo\WebContent\web\js\default\CheckBox.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\default\DateTextBox.js to G:\Development\Projects\Openbravo\WebContent\web\js\default\DateTextBox.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\default\MessageBox.js to G:\Development\Projects\Openbravo\WebContent\web\js\default\MessageBox.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\default\TimeTextBox.js to G:\Development\Projects\Openbravo\WebContent\web\js\default\TimeTextBox.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\default\UrlTextBox.js to G:\Development\Projects\Openbravo\WebContent\web\js\default\UrlTextBox.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\default\ValidationIntegerBox.js to G:\Development\Projects\Openbravo\WebContent\web\js\default\ValidationIntegerBox.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\default\ValidationNumberBox.js to G:\Development\Projects\Openbravo\WebContent\web\js\default\ValidationNumberBox.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\default\ValidationTextArea.js to G:\Development\Projects\Openbravo\WebContent\web\js\default\ValidationTextArea.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\default\ValidationTextBox.js to G:\Development\Projects\Openbravo\WebContent\web\js\default\ValidationTextBox.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\djConfig.js to G:\Development\Projects\Openbravo\WebContent\web\js\djConfig.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\djDependencies.js to G:\Development\Projects\Openbravo\WebContent\web\js\djDependencies.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\dojoConfig.js to G:\Development\Projects\Openbravo\WebContent\web\js\dojoConfig.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\error.js to G:\Development\Projects\Openbravo\WebContent\web\js\error.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\genericTree.js to G:\Development\Projects\Openbravo\WebContent\web\js\genericTree.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\calendar-blue.css to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\calendar-blue.css
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\calendar-brown.css to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\calendar-brown.css
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\calendar-green.css to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\calendar-green.css
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\calendar-setup.js to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\calendar-setup.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\calendar-setup_stripped.js to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\calendar-setup_stripped.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\calendar-system.css to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\calendar-system.css
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\calendar-tas.css to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\calendar-tas.css
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\calendar-win2k-1.css to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\calendar-win2k-1.css
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\calendar-win2k-2.css to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\calendar-win2k-2.css
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\calendar-win2k-cold-1.css to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\calendar-win2k-cold-1.css
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\calendar-win2k-cold-2.css to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\calendar-win2k-cold-2.css
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\calendar.js to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\calendar.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\calendar_stripped.js to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\calendar_stripped.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\doc\html\reference-Z-S.css to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\doc\html\reference-Z-S.css
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\doc\html\reference.css to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\doc\html\reference.css
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\lang\calendar-af.js to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\lang\calendar-af.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\lang\calendar-ar.js to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\lang\calendar-ar.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\lang\calendar-bg.js to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\lang\calendar-bg.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\lang\calendar-big5-utf8.js to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\lang\calendar-big5-utf8.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\lang\calendar-big5.js to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\lang\calendar-big5.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\lang\calendar-br.js to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\lang\calendar-br.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\lang\calendar-ca.js to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\lang\calendar-ca.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\lang\calendar-cs-utf8.js to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\lang\calendar-cs-utf8.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\lang\calendar-cs-win.js to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\lang\calendar-cs-win.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\lang\calendar-da.js to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\lang\calendar-da.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\lang\calendar-de.js to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\lang\calendar-de.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\lang\calendar-du.js to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\lang\calendar-du.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\lang\calendar-el.js to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\lang\calendar-el.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\lang\calendar-en.js to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\lang\calendar-en.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\lang\calendar-es.js to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\lang\calendar-es.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\lang\calendar-fi.js to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\lang\calendar-fi.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\lang\calendar-fr.js to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\lang\calendar-fr.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\lang\calendar-hr-utf8.js to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\lang\calendar-hr-utf8.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\lang\calendar-hu.js to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\lang\calendar-hu.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\lang\calendar-it.js to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\lang\calendar-it.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\lang\calendar-ja.js to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\lang\calendar-ja.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\lang\calendar-ko-utf8.js to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\lang\calendar-ko-utf8.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\lang\calendar-ko.js to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\lang\calendar-ko.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\lang\calendar-lang.js to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\lang\calendar-lang.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\lang\calendar-lt-utf8.js to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\lang\calendar-lt-utf8.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\lang\calendar-lt.js to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\lang\calendar-lt.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\lang\calendar-lv.js to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\lang\calendar-lv.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\lang\calendar-nl.js to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\lang\calendar-nl.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\lang\calendar-no.js to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\lang\calendar-no.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\lang\calendar-pl-utf8.js to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\lang\calendar-pl-utf8.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\lang\calendar-pl.js to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\lang\calendar-pl.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\lang\calendar-pt.js to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\lang\calendar-pt.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\lang\calendar-ro.js to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\lang\calendar-ro.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\lang\calendar-ru.js to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\lang\calendar-ru.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\lang\calendar-ru_win_.js to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\lang\calendar-ru_win_.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\lang\calendar-si.js to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\lang\calendar-si.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\lang\calendar-sk.js to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\lang\calendar-sk.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\lang\calendar-sp.js to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\lang\calendar-sp.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\lang\calendar-sq.js to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\lang\calendar-sq.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\lang\calendar-sv.js to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\lang\calendar-sv.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\lang\calendar-tr.js to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\lang\calendar-tr.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\lang\calendar-zh.js to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\lang\calendar-zh.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\lang\cn_utf8.js to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\lang\cn_utf8.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\skins\Default\theme.css to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\skins\Default\theme.css
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\jscalendar\skins\aqua\theme.css to G:\Development\Projects\Openbravo\WebContent\web\js\jscalendar\skins\aqua\theme.css
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\menuKeyboard.js to G:\Development\Projects\Openbravo\WebContent\web\js\menuKeyboard.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\messages.js to G:\Development\Projects\Openbravo\WebContent\web\js\messages.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\openbravo\widget\DataGrid.js to G:\Development\Projects\Openbravo\WebContent\web\js\openbravo\widget\DataGrid.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\openbravo\widget\ValidationTextBox.js to G:\Development\Projects\Openbravo\WebContent\web\js\openbravo\widget\ValidationTextBox.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\periodControlStatus.js to G:\Development\Projects\Openbravo\WebContent\web\js\periodControlStatus.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\productCharacteristicsProcess.js to G:\Development\Projects\Openbravo\WebContent\web\js\productCharacteristicsProcess.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\productServices.js to G:\Development\Projects\Openbravo\WebContent\web\js\productServices.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\recalculatePermissionsProcess.js to G:\Development\Projects\Openbravo\WebContent\web\js\recalculatePermissionsProcess.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\searchs.js to G:\Development\Projects\Openbravo\WebContent\web\js\searchs.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\shortcuts.js to G:\Development\Projects\Openbravo\WebContent\web\js\shortcuts.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\utils.js to G:\Development\Projects\Openbravo\WebContent\web\js\utils.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\validateCostingRuleProcess.js to G:\Development\Projects\Openbravo\WebContent\web\js\validateCostingRuleProcess.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\js\windowKeyboard.js to G:\Development\Projects\Openbravo\WebContent\web\js\windowKeyboard.js
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\skins\Default\Excel\Excel.css to G:\Development\Projects\Openbravo\WebContent\web\skins\Default\Excel\Excel.css
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\skins\Default\Login\Login.css to G:\Development\Projects\Openbravo\WebContent\web\skins\Default\Login\Login.css
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\skins\Default\Main\Main_Edition.css to G:\Development\Projects\Openbravo\WebContent\web\skins\Default\Main\Main_Edition.css
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\skins\Default\Main\Main_Manual.css to G:\Development\Projects\Openbravo\WebContent\web\skins\Default\Main\Main_Manual.css
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\skins\Default\Main\Main_Popup.css to G:\Development\Projects\Openbravo\WebContent\web\skins\Default\Main\Main_Popup.css
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\skins\Default\Main\Main_Relation.css to G:\Development\Projects\Openbravo\WebContent\web\skins\Default\Main\Main_Relation.css
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\skins\Default\Main\Main_Report.css to G:\Development\Projects\Openbravo\WebContent\web\skins\Default\Main\Main_Report.css
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\skins\Default\Menu\Menu.css to G:\Development\Projects\Openbravo\WebContent\web\skins\Default\Menu\Menu.css
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\skins\Default\Openbravo_ERP.css to G:\Development\Projects\Openbravo\WebContent\web\skins\Default\Openbravo_ERP.css
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\skins\Default\Openbravo_ERP_240.css to G:\Development\Projects\Openbravo\WebContent\web\skins\Default\Openbravo_ERP_240.css
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\skins\Default\Openbravo_ERP_240_print.css to G:\Development\Projects\Openbravo\WebContent\web\skins\Default\Openbravo_ERP_240_print.css
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\skins\Default\Openbravo_ERP_250.css to G:\Development\Projects\Openbravo\WebContent\web\skins\Default\Openbravo_ERP_250.css
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\skins\Default\Openbravo_ERP_250_print.css to G:\Development\Projects\Openbravo\WebContent\web\skins\Default\Openbravo_ERP_250_print.css
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\skins\Default\Openbravo_ERP_print.css to G:\Development\Projects\Openbravo\WebContent\web\skins\Default\Openbravo_ERP_print.css
+[yuicompress] Compressing G:\Development\Projects\Openbravo\web\skins\Default\Popup\Popup.css to G:\Development\Projects\Openbravo\WebContent\web\skins\Default\Popup\Popup.css
+
+translate:
+
+trl.remove.unused:
+
+compile.complete:
+
+update.build.timestamp:
+      [sql] Executing commands
+      [sql] 1 of 1 SQL statements executed successfully
+
+copy.files.jarsync.notinrebuildui:
+
+copy.files:
+     [sync] Copying 8740 files to G:\Development\Projects\Openbravo\${env.CATALINA_HOME}\webapps\openbravo
+     [sync] Removed 6 dangling files from G:\Development\Projects\Openbravo\${env.CATALINA_HOME}\webapps\openbravo
+     [sync] Copying 3335 files to G:\Development\Projects\Openbravo\${env.CATALINA_HOME}\webapps\openbravo\WEB-INF\classes
+     [sync] Removed 14 dangling directories from G:\Development\Projects\Openbravo\${env.CATALINA_HOME}\webapps\openbravo\WEB-INF\classes
+     [sync] Removed 52 dangling files from G:\Development\Projects\Openbravo\${env.CATALINA_HOME}\webapps\openbravo\WEB-INF\classes
+
+compile.complete.development:
+      [sql] Executing commands
+      [sql] 2 of 2 SQL statements executed successfully
+
+compile.complete.war:
+
+compile.complete.deploy:

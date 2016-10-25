@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+  <vector>
+    <columnDataChange tablename="M_OFFER_TYPE" columnname="EM_OBPOS_ISCATEGORY" pkRow="5D4BAF6BB86D4D2C9ED3D5A6FC051579">
+      <oldValue/>
+      <newValue><![CDATA[N]]></newValue>
+    </columnDataChange>
+  </vector>
